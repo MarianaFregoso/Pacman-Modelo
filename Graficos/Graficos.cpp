@@ -55,7 +55,7 @@ void actualizar() {
 
 		vista = lookAt(posicioncamara,	//POSICION CAMARA
 			vec3(0.0f, 0.0f, 0.0f),					//POSICION OBJETIVO
-			vec3(0.0f, -1.0f, 0.0f));
+			vec3(0.0f, 1.0f, 0.0f));
 	}
 	 
 
@@ -67,7 +67,7 @@ void actualizar() {
 
 		vista = lookAt(posicioncamara,	//POSICION CAMARA
 			vec3(0.0f, 0.0f, 0.0f),					//POSICION OBJETIVO
-			vec3(0.0f, -1.0f, 0.0f));
+			vec3(0.0f, 1.0f, 0.0f));
 
 	}
 
@@ -78,7 +78,7 @@ void actualizar() {
 
 		vista = lookAt(posicioncamara,	//POSICION CAMARA
 			vec3(0.0f, 0.0f, 0.0f),					//POSICION OBJETIVO
-			vec3(0.0f, -1.0f, 0.0f));
+			vec3(0.0f, 1.0f, 0.0f));
 	}
 
 	int estadoabajo = glfwGetKey(window, GLFW_KEY_DOWN);
@@ -88,7 +88,7 @@ void actualizar() {
 
 		vista = lookAt(posicioncamara,	//POSICION CAMARA
 			vec3(0.0f, 0.0f, 0.0f),					//POSICION OBJETIVO
-			vec3(0.0f, -1.0f, 0.0f));
+			vec3(0.0f, 1.0f, 0.0f));
 	}
 } 
 
@@ -133,43 +133,6 @@ void inicializarCuadrado() {
 	cuadrado->vertices.push_back({ vec4(-1.0f, -3.0f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
 	
 
-	cuadrado->vertices.push_back({ vec4(-1.0f, -1.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-3.0f, -0.5f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-1.0f, -3.0f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(-3.0f, -0.5f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-3.3f, -2.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-1.0f, -3.0f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-
-
-	cuadrado->vertices.push_back({ vec4(3.0f, -0.5f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(3.3f, -2.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(1.0f, -3.0f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(1.0f, -1.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(3.0f, -0.5f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(1.0f, -3.0f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-
-
-	cuadrado->vertices.push_back({ vec4(3.0f, -0.5f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(5.0f, -1.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(3.2f, -2.52f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(4.5f, -0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(3.0f, -0.5f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(5.0f, -1.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-
-
-	cuadrado->vertices.push_back({ vec4(4.5f, 0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(5.0f, -1.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(6.0f, -0.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(4.5f, -0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(5.5f, 1.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(6.0f, -0.5f, -1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
 
 
 	/*final*/
@@ -233,7 +196,7 @@ int main()
 
 	red = green = blue = 0.5f;
 
-	posicioncamara = vec3(10.0f, 0.0f, 10.0f);
+	posicioncamara = vec3(10.0f, 0.0f, 15.0f);
 
 	inicializarvista();
 	inicializarproyeccion();
